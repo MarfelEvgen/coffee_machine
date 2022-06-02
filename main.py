@@ -20,7 +20,7 @@ def process_coins():
     total += int(input('How you have 0.01?')) * 0.01
     return total
 
-
+#Проверяяем валидность транзакции
 def check_transaction(money_received, drink_coast):
     global profit
     if money_received >= drink_coast:
@@ -32,7 +32,7 @@ def check_transaction(money_received, drink_coast):
         print("Sorry that's not enough money. Money refunded")
         return False
 
-
+#Создаем кофе и вычитаем из реурса использованные ингредиенты
 def make_coffee(drink_name, order_ingredients):
     for i in order_ingredients:
         data_file.resources[i] -= order_ingredients[i]
