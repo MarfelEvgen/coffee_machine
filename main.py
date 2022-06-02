@@ -1,6 +1,6 @@
 import data_file
 
-profit = 0
+profit = 1
 is_on = True
 
 while is_on:
